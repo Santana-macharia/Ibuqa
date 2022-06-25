@@ -9,3 +9,5 @@ def users_list(request):
     return render(request, 'api/users_list.html', {'data': data})
 
 
+
+
