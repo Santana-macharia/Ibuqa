@@ -23,7 +23,7 @@ class Users(models.Model):
 class Customers(models.Model):
   
     name = models.CharField(max_length=30, blank=True, null=True)
-    code = models.CharField(max_length=30, blank=True, null=True)
+    code = models.IntegerField(default=0, null=True, blank=True)
 
     def __str__(self):
         return self.name
