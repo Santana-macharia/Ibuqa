@@ -1,0 +1,6 @@
+{% block content %}
+
+Approach used <b>{{approach}}</b><br>
+{% if request.user.is_authenticated %}
+<b> Signed In </b>
+{% end if %}
